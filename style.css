@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("images/background.jpg");
+  background: #a79aff;
   background-size: cover;
   background-position: center;
 }
@@ -19,13 +19,14 @@ body {
 .container {
   position: relative;
   width: 400px;
-  height: 555px;
+  height: 100px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 20px;
   color: #fff;
+  transition: height 0.6s ease;
 }
 
 /* -----------------search box---------------- */
@@ -81,6 +82,18 @@ body {
 .weather-box {
   text-align: center;
   margin: 40px 0;
+}
+
+.weather-box,
+.weather-details,
+.not-found {
+  visibility: hidden;
+}
+
+.weather-box.active,
+.weather-details.active,
+.not-found.active {
+  visibility: visible;
 }
 
 .weather-box img {
@@ -149,4 +162,23 @@ body {
   font-weight: 500;
   margin-top: 10px;
   text-transform: capitalize;
+}
+
+.not-found {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 110px;
+}
+
+.not-found img {
+  width: 65%;
+}
+
+.not-found p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
 }
