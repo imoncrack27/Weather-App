@@ -87,6 +87,7 @@ body {
 .weather-box,
 .weather-details,
 .not-found {
+  overflow: hidden;
   visibility: hidden;
 }
 
