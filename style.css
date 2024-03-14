@@ -185,6 +185,7 @@ body {
   text-transform: capitalize;
 }
 
+/* -----------------not found---------------- */
 .not-found {
   position: absolute;
   top: 0;
