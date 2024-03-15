@@ -236,8 +236,7 @@ body {
   transform: translateY(-100%);
 }
 
-#clone-info-weather .weather;
- {
+#clone-info-weather .weather {
   transform: translateY(120%);
   transition: transform 1s ease, opacity 0s;
   transition-delay: 0s, 2s;
